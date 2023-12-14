@@ -1,0 +1,388 @@
+:root {
+    --primary-color: #2c3ccc;
+    --secondary-color: #000000;
+    --tertiary-color: #e74c3c;
+    --texts: white;
+    --font-family: 'Arial', sans-serif;
+}
+
+body {
+    font-family: var(--font-family);
+    margin: 0;
+    padding: 0;
+    background-color: var(--secondary-color);
+    color: white;
+}
+
+header {
+    font: var(--font-family);
+    background-color: var(--primary-color);
+    color: black;
+    padding: 10px;
+    text-align: center;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 10px;
+}
+
+nav a {
+    font: var(--font-family);
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+}
+
+.main-content {
+    padding: 20px;
+}
+
+h2 {
+    color: var(--secondary-color);
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Agrega estilos específicos para la sección de Suscripción */
+
+.subscription-container {
+    font: var(--font-family);
+    max-width: 400px;
+    margin: 80px auto 0; /* Agrega un margen superior de 80px */
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    background-color: #fff;
+    color: var(--tertiary-color);
+}
+
+.subscriptionForm {
+    font: var(--font-family);
+}
+
+h2 {
+    font: var(--font-family);
+    font-size: x-large;
+    color: var(--tertiary-color);
+    text-align: center;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    margin-top: 10px;
+    font-weight: bold;
+}
+
+input,
+select {
+    margin-bottom: 15px;
+    padding: 10px;
+    border: 1px solid var(--secondary-color);
+    border-radius: 4px;
+}
+
+input[type="submit"] {
+    background-color: var(--primary-color);
+    color: #fff;
+    cursor: pointer;
+}
+
+input[type="submit"]:hover {
+    background-color: var(--tertiary-color);
+}
+
+
+/* Estilos actualizados para el sidebar y el contenido principal */
+.home-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center; 
+    height: 100%;
+}
+
+.home-container h3 {
+    font: var(--font-family);
+    font-size: 1.3em;
+}
+
+.home-container span {
+    font: var(--font-family);
+   
+}
+
+.sidebar {
+    width: 20%;
+    background-color: var(--primary-color);
+    color: white;
+    padding: 20px;
+    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
+    min-height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.sidebar ul {
+    list-style: none;
+    padding: 0;
+    margin-top: auto;
+}
+
+.sidebar li {
+    margin-bottom: 10px;
+}
+
+.sidebar a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+}
+
+.sidebar a:hover {
+    color: var(--tertiary-color);
+}
+
+.main-content {
+    width: 65%;
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+}
+
+.main-content img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgb(0, 0, 0, 0.1);
+    margin-bottom: 10px;
+}
+
+.main-content p {
+    font: var(--font-family);
+    margin-top: 10px;
+    font-size: 1.3em;
+}
+
+.discover-more {
+    text-align: center;
+}
+
+.discover-more button {
+    background-color: var(--tertiary-color);
+    color: white;
+    transition: background-color 0.3s ease;
+    cursor: pointer;
+    padding: 10px 20px;
+    font-size: 16px;
+}
+
+.discover-more button:hover {
+    background-color: var(--primary-color);
+}
+
+.more-info {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+    text-align: center;
+}
+
+.more-info h3 {
+    color: var(--tertiary-color);
+    margin-bottom: 10px;
+}
+
+.more-info p {
+    font: var(--font-family);
+    margin: 5px 0;
+    font-size: 1.3em;
+}
+
+.more-info a {
+    color: var(--tertiary-color);
+    text-decoration: none;
+}
+
+.more-info a:hover {
+    text-decoration: underline;
+}
+
+.more-info img {
+    max-width: 100%;
+    
+}
+
+
+.more-info button {
+    font: var(--font-family);
+    background-color: var(--tertiary-color);
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    padding: 10px 20px;
+    font-size: 16px;
+}
+
+.more-info button:hover {
+    background-color: var(--primary-color);
+}
+  
+/*Styles to the NASA Section*/
+
+.nasa-image {
+    max-width: 800px;
+    margin: 0 auto; 
+}
+
+.nasa-container h2 {
+    font: var(--font-family);
+    font-size: 1.3em;
+}
+
+.nasa-container p {
+    font: var(--font-family);
+    font-size: 1.3em;
+}
+
+/* Estilo para la cuadrícula de miniaturas en historial */
+.historial-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
+    gap: 10px;
+}
+
+.historial-grid img {
+    width: 100%;
+    height: auto;
+    max-height: 100px; /* Ajusta la altura máxima según sea necesario */
+    object-fit: cover;
+    cursor: pointer; /* Agrega un cursor apuntador para indicar que es interactivo */
+}
+
+.date-search button {
+    background-color: var(--primary-color); /* Color de fondo para los botones */
+    color: white;
+    padding: 10px 20px;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.date-search button:hover {
+    background-color: var(--tertiary-color);
+}
+
+.buttons {
+    display: flex;
+    justify-content: space-between;
+}
+
+#downloadButton,
+#shareButton,
+#randomButton {
+    background-color: var(--primary-color); /* Color de fondo para los botones */
+    color: white;
+    padding: 10px 20px;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease; /* Efecto de transición en el cambio de color de fondo */
+}
+
+#downloadButton:hover,
+#shareButton:hover,
+#randomButton:hover {
+    background-color: var(--tertiary-color);
+}
+
+/* Media Query para pantallas pequeñas */
+@media (max-width: 768px) {
+    .home-container {
+        flex-direction: column;
+    }
+
+    .sidebar, .main-content {
+        width: 100%;
+        margin: 0;
+    }
+
+    .home-container {
+        flex-direction: column-reverse;
+    }
+
+    .nasa-image {
+        max-width: 100%;
+    }
+
+    .historial-grid {
+        grid-template-columns: repeat(auto-fill, minmax(50px, 1fr));
+    }
+
+ 
+}
+
+/* Estilos para el pie de página */
+
+.footer {
+    text-align: center;
+    padding: 20px;
+   
+}
+
+.copyright {
+    font-size: 14px;
+    font: var(--font-family);
+    color: white;
+}
+
+.social-links {
+    margin-top: 10px;
+}
+
+.social-links a {
+    display: inline-block;
+    margin: 0 10px;
+    text-decoration: none;
+    color: var(--primary-color); /* Color de los enlaces a las redes sociales */
+    font-size: 20px;
+}
+
+.social-links a:hover {
+    color: var(--primary-color)
+}
+
+/* Ajustes para el ícono de Facebook */
+.social-links img {
+    width: 20px; /* Ajusta el ancho del ícono según tus preferencias */
+    height: 20px; /* Ajusta la altura del ícono según tus preferencias */
+    margin-right: 5px; /* Añade un espacio entre el ícono y el texto del enlace */
+}
+
+/* Estilos generales para los enlaces de redes sociales */
+.social-links a {
+    text-decoration: none;
+    color: #333; /* Color de texto para los enlaces */
+}
+
+.social-links a:hover {
+    text-decoration: underline;
+}
+
